@@ -1,0 +1,4 @@
+__pycache__/
+*.pyc
+output_image.jpg
+tensorflow-2.15.0-cp311-cp311-win_amd64.whl
