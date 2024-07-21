@@ -10,7 +10,7 @@ RUN /bin/bash -c "source venv/bin/activate"
 
 RUN pip install fastapi 
 RUN pip install uvicorn
-RUN pip install tensorflow==2.15.07
+RUN pip install tensorflow==2.15.0
 RUN pip install pillow
 COPY . .
 EXPOSE 8000
