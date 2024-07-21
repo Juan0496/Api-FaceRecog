@@ -8,8 +8,8 @@ from keras.preprocessing import image
 
 
 #CARGA LA MODELOS 
-path_json="./sospechosos.json"
-path_h5="./sospechosos.h5"
+path_json="./modelos/sospechosos.json"
+path_h5="./modelos/sospechosos.h5"
 json_file=open(path_json,"r")
 modelo_json=json_file.read()
 json_file.close()
@@ -63,4 +63,4 @@ async def send_message(file: UploadFile = File(...)):
        
 if __name__ == "__main__":
     import uvicorn
-    uvicorn.run(app, host="127.0.0.1", port=8000)
+    uvicorn.run(app, host="0.0.0.0", port=8000)
